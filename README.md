@@ -19,25 +19,25 @@ A estufa é controlada por uma placa ESP8266, o processo de iluminação é feit
 	 *  	#   : Sinaliza o começo de um código, para filtrar strings aleatórias (1 digito)
 	 *		AA  : Parametro que será alterado ou consultado (2 digitos)
 	 *		B   : 'g' ou 's' -> get ou set, diz se o usuário pretende alterar um parametro ou ler um valor (1 digito)
-	 *      CC  : se o B for igual a set CC terá o valor que será setado no parametro, representado por um numero inteiro com dois digitos.
+	 *              CC  : se o B for igual a set CC terá o valor que será setado no parametro, representado por um numero inteiro com dois digitos.
 	 *		+   : Caracter que sinaliza que um código finalizou
 	 *
 	 *		AA: Parametros: -Temperatura máxima : tx
 	 *						-Temperatura minima : tn
 	 *						-Temperatura atual  : ta
 	 *						-Tempo da lampada   : lt
-	 *                      -Status da luz      : SL
-	 *          			-Status do aquecedor: SA
-	 *						-Status do cooler 	: SC
+	 *                                              -Status da luz      : SL
+	 *          			                -Status do aquecedor: SA
+	 *						-Status do cooler   : SC
 	 *
-	 *		B : Parametros: -Get: g
+	 *		B : Parametros:                 -Get: g
 	 *						-Set  s
 	 *
 	 *		CC: Numero inteiro com dois digitos.
 	 *	
-	 *		Exemplos: #tag+    -> usuário recebe a informação sobre a temperatura atual da estufa
+	 *		Exemplos:         #tag+    -> usuário recebe a informação sobre a temperatura atual da estufa
 	 *				  #tns22+  -> usuário seta a temperatura minima que o sistema deve ficar em 22 ºC
-	 *                #SAg+	   -> usuário recebe a informação sobre o status do aquecedor
+	 *                                #SAg+	   -> usuário recebe a informação sobre o status do aquecedor
 	 *				  #lts14+  -> usuário seta que a estufa deve ser iluminada durante 14 horas por dia.
 
 
