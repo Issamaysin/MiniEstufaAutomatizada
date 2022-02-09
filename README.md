@@ -7,8 +7,8 @@ Projeto mini estufa automatizada: Consiste em uma pequena estufa, para uma unica
 
 A estufa é controlada por uma placa ESP8266, o processo de iluminação é feito utilizando uma lampada LED grow especifica para o crescimento
 	de plantas que é ligada/desligada pelo controlador através de um relé, o aquecimento é feito por uma escada de resistores e o resfriamento
-	através de um cooler, ambos são conectados ao controlador através de transistores TIP122, e a medição da temperatura é realizada por um 
-	sensor de temperatura DS18B20, o processo de irrigação utiliza um sensor resistivo de umidade do solo e uma valvula de água conectada a
+	através de um cooler, ambos são conectados ao controlador através de transistores TIP122 e a medição da temperatura é realizada por um 
+	sensor de temperatura DS18B20, o processo de irrigação utiliza um sensor resistivo de umidade do solo e uma valvula conectada a
 	uma fonte de água. A interface Wifi utiliza a plataforma Arduino IoT cloud para se conectar e trocar informações com o controlador, devido
 	as limitações dessa ferramenta a interface utiliza um comando de texto para se comunicar, onde o usuário escreve um código referente a função
 	que deseja executar e recebe uma frase com os resultados da operação.
@@ -19,7 +19,7 @@ A estufa é controlada por uma placa ESP8266, o processo de iluminação é feit
 	 *  	#   : Sinaliza o começo de um código, para filtrar strings aleatórias (1 digito)
 	 *		AA  : Parametro que será alterado ou consultado (2 digitos)
 	 *		B   : 'g' ou 's' -> get ou set, diz se o usuário pretende alterar um parametro ou ler um valor (1 digito)
-	 *              CC  : se o B for igual a set CC terá o valor que será setado no parametro, representado por um numero inteiro com dois digitos.
+	 *              CC  : se o B for igual a set então CC terá o valor que será setado no parametro, representado por um numero inteiro com dois digitos.
 	 *		+   : Caracter que sinaliza que um código finalizou
 	 *
 	 *		AA: Parametros: -Temperatura máxima : tx
