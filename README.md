@@ -1,9 +1,10 @@
 
 Autor: Renato Pepe (https://github.com/Issamaysin)
 
-Projeto mini estufa automatizada: Consiste em uma pequena estufa, para uma unica planta, onde os processos de iluminação, aquecimento
-	resfriamento, e irrigação realizados automaticamente. O usuário pode controlar e checar os parametros a distancia através de uma
+Projeto mini estufa automatizada: Consiste em uma pequena estufa, para uma unica planta, onde os processos de iluminação, aquecimento,
+	resfriamento, e irrigação são realizados automaticamente. O usuário pode controlar e checar os parâmetros a distância através de uma
 	interface wifi
+	
 
 A estufa é controlada por uma placa ESP8266, o processo de iluminação é feito utilizando uma lampada LED grow especifica para o crescimento
 	de plantas que é ligada/desligada pelo controlador através de um relé, o aquecimento é feito por uma escada de resistores e o resfriamento
